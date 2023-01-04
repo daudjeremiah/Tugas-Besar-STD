@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1670952003 source:d:\kuliah\semester 3\mata kuliah\struktur data\teori\tugas besar\tugasbesarpalmhouse\main.cpp
+	"Film.h"
+
+1670952002 source:d:\kuliah\semester 3\mata kuliah\struktur data\teori\tugas besar\tugasbesarpalmhouse\film.cpp
+	"Film.h"
+
+1670952003 d:\kuliah\semester 3\mata kuliah\struktur data\teori\tugas besar\tugasbesarpalmhouse\film.h
+	<iostream>
+
+1672310609 source:c:\users\asus\onedrive\documents\tugasbesarpalmhouse\tugasbesarpalmhouse\film.cpp
+	"Film.h"
+
+1672041993 c:\users\asus\onedrive\documents\tugasbesarpalmhouse\tugasbesarpalmhouse\film.h
+	<iostream>
+
+1672310416 source:c:\users\asus\onedrive\documents\tugasbesarpalmhouse\tugasbesarpalmhouse\main.cpp
+	"Film.h"
+
+1672481426 source:c:\users\asus rog\desktop\tugasbesarpalmhouse\film.cpp
+	"Film.h"
+
+1672398764 c:\users\asus rog\desktop\tugasbesarpalmhouse\film.h
+	<iostream>
+
+1672488138 source:c:\users\asus rog\desktop\tugasbesarpalmhouse\main.cpp
+	"Film.h"
+
+1672480160 source:c:\tugas besar std\tugasbesarpalmhouse\main.cpp
+	"Film.h"
+
+1672398762 c:\tugas besar std\tugasbesarpalmhouse\film.h
+	<iostream>
+
+1672456807 source:c:\tugas besar std\tugasbesarpalmhouse\film.cpp
+	"Film.h"
+

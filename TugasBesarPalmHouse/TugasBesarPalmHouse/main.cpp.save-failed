@@ -1,0 +1,78 @@
+#include "Film.h"
+
+int main()
+{
+    cout << "------------ Tugas Besar ------------" << endl;
+    cout << "------------ Palm House ------------" << endl;
+    cout << "Anggota Kelompok :" << endl;
+    cout << "Daud Jeremiah Oscar Simanjuntak - 1301213404" << endl;
+    cout << "Dio Irsaputra Siregar - 1301213012" << endl << endl;
+    cout << "-------------------------------------------------------" << endl;
+    listFilm Lf;
+    adr_film Pf,P;
+    listSutradara Ls;
+    adr_sutradara Ps;
+    infotype F;
+    string nameS;
+    int x,durasi;
+
+
+
+    createListFilm(Lf);
+    createListSutradara(Ls);
+    while (x!=0){
+
+        cout << "1. Masukan Film"<<endl;
+        cout << "2. Masukan Nama Sutradara"<<endl;
+        cout << "3. Menghapus Semua Film" <<endl;
+        cout << "4. Menampilkan Film Paling Sedikit"<< endl;
+        cout << "4. Menampilkan List Film "<< endl;
+        cout << "0. Keluar"<<endl;
+        cout << "Pilihan Anda: ";
+        cin >> x;
+        cout << endl;
+        switch(x){
+        case 1:
+            cout << "==========Masukkan Film========"<<endl;
+            cout << "Judul: ";
+            cin >> F.Judul;
+            cout << "Genre: ";
+            cin >> F.Genre;
+            cout << "Durasi: ";
+            cin >> F.Durasi;
+            Pf = createNewFilm(F.Judul,F.Genre,F.Durasi,Pf);
+            insertLastFilm(Lf,Pf);
+
+            cout << endl;
+             break;
+        case 2:
+            cout << "========Mengganti Film========="<< endl;
+            cout << "Nama Sutradara: ";
+            cin >> nameS;
+            Ps = createNewSutradara(nameS,Ps);
+            insertLastSutradara(Ls,Ps);
+            tambahRelasi(Lf,Ls,Pf,Ps);
+        case 3:
+
+            cout<< "Menghapus Semua Data Film";
+            while(countFilm(Lf,Ls)!= 0){
+                hapusDataFilm(Lf,Ls,Pf,Ps);
+            }
+            cout << endl;
+            break;
+        case 4:
+            mostFilm(Lf,Ls);
+            cout<<endl;
+        case 5:
+            cout << "========Daftar List========" << endl;
+            printFilm(Lf,Ls);
+            cout << endl;
+            break;
+        cout << "Banyak Film: " << countFilm(Lf,Ls);
+        cout<< endl;
+        }
+    }
+    cout << "Keluar dari Program ";
+
+    return 0;
+}
